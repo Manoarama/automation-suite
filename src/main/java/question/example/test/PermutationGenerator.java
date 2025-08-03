@@ -3,7 +3,7 @@ package question.example.test;
 
 public class PermutationGenerator {
     public static void main(String[] args) {
-        String input = "abcd";
+        String input = "ab";
         generatePermutations("", input);
     }
 

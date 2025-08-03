@@ -12,8 +12,8 @@ public class StringManualOps {
        System.out.println("Vowels Only: " + getVowels(input));
        System.out.println("Unique Characters: " + getUniqueCharacters(input));
         System.out.println("Reversed: " + reverseString(input));
-    }
 
+    }
 
 
 
