@@ -1,27 +1,14 @@
 package api.payload;
 
 public class User {
-
- /*   [
-    {
-        "id": 0,
-            "username": "string",
-            "firstName": "string",
-            "lastName": "string",
-            "email": "string",
-            "password": "string",
-            "phone": "string",
-            "userStatus": 0
-    }
-]*/
-
     String username;
     String firstName;
     String lastName;
     String email;
     String password;
     String phone;
-    int userStatus=0;
+    int id;
+
 
     public String getUsername() {
         return username;
@@ -71,11 +58,11 @@ public class User {
         this.phone = phone;
     }
 
-    public int getUserStatus() {
-        return userStatus;
+    public int getId() {
+        return id;
     }
 
-    public void setUserStatus(int userStatus) {
-        this.userStatus = userStatus;
+    public void setId(int id) {
+        this.id = id;
     }
 }

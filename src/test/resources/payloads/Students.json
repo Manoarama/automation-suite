@@ -1,0 +1,169 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "location": "New York",
+      "courses": [
+        "Computer Science",
+        "Mathematics"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "location": "California",
+      "courses": [
+        "Mathematics",
+        "Statistics"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "location": "Texas",
+      "courses": [
+        "Physics",
+        "Chemistry"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Diana",
+      "location": "Florida",
+      "courses": [
+        "Biology",
+        "Environmental Science"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ethan",
+      "location": "Illinois",
+      "courses": [
+        "Engineering",
+        "Computer Science"
+      ]
+    },
+    {
+      "id": "bf0f",
+      "phone": 987654,
+      "name": "Scott",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "France"
+    },
+    {
+      "id": "ad09",
+      "phone": 987654,
+      "name": "Scott",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "France"
+    },
+    {
+      "id": "f36d",
+      "phone": 987654,
+      "name": "Scott",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "France"
+    },
+    {
+      "id": "ddb9",
+      "phone": 987654,
+      "name": "Scott",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "France"
+    },
+    {
+      "id": "0a72",
+      "phone": 987654,
+      "name": "Scott",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "France"
+    },
+    {
+      "id": "2858",
+      "phone": 987654,
+      "name": "Scott",
+      "course": [
+        "C",
+        "C++"
+      ],
+      "location": "France"
+    },
+    {
+      "id": "e2fe",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "phone": 987654,
+      "name": "Scott",
+      "location": "France"
+    },
+    {
+      "id": "4472",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "phone": 987654,
+      "name": "Scott",
+      "location": "France"
+    },
+    {
+      "id": "744d",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "phone": 987654,
+      "name": "Scott",
+      "location": "France"
+    },
+    {
+      "id": "1be4",
+      "courses": [
+        "C",
+        "C++"
+      ],
+      "phone": 987654,
+      "name": "Scott",
+      "location": "France"
+    },
+    {
+      "id": "ecfa",
+      "name": "Scott",
+      "location": "France",
+      "phone": "987654",
+      "courses": [
+        "C",
+        "C++"
+      ]
+    },
+    {
+      "id": "7718",
+      "name": "Scott",
+      "location": "France",
+      "phone": 987654,
+      "courses": [
+        "C",
+        "C++"
+      ]
+    }
+  ]
+}
