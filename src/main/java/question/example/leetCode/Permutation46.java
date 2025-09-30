@@ -13,7 +13,8 @@ public class Permutation46 {
     private void permuteSwap(int[] nums, int start, List<List<Integer>> result) {
         if (start == nums.length) {
             List<Integer> perm = new ArrayList<>();
-            for (int v : nums) perm.add(v);
+            for (int v : nums)
+                perm.add(v);
             result.add(perm);
             return;
         }
