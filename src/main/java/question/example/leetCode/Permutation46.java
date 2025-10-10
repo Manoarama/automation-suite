@@ -24,11 +24,13 @@ public class Permutation46 {
             swap(nums, start, i); // backtrack
         }
     }
+
     private void swap(int[] a, int i, int j) {
         int t = a[i];
         a[i] = a[j];
         a[j] = t;
     }
+
     public static void main(String[] args) {
         Permutation46 ip = new Permutation46();
         int[] nums = {1, 2, 3};
