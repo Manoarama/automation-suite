@@ -9,8 +9,6 @@ import static io.restassured.RestAssured.given;
 
 public class LilyRest {
 
-
-
     public static void main(String[] args) {
         // 🔐 Disable SSL validation (only for dev use)
         String endpoint = "https://jsonplaceholder.typicode.com/users/1"; // sample API
