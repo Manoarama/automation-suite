@@ -1,4 +1,4 @@
-package ubs1;
+package question.ubs1;
 
 public class Main {
     public static void main(String[] args) {

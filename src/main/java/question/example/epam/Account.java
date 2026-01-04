@@ -1,4 +1,4 @@
-package question.example.mape;
+package question.example.epam;
  /*   Create a class called Account, which maintains the balance,and allows you to deposit and withdraw money.
         Whenever the balance of the account goes below zero,and will raise an exception.  */
  class InsufficientFundsException extends Exception {

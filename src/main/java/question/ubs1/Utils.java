@@ -1,4 +1,4 @@
-package ubs1;
+package question.ubs1;
 
 class Utils {
     public static String roundDouble(double value) {

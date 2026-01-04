@@ -1,7 +1,4 @@
-package question.example.mape;
-
-import jakarta.persistence.criteria.CriteriaBuilder;
-import jdk.jfr.Frequency;
+package question.example.epam;
 
 import java.util.HashMap;
 import java.util.Map;

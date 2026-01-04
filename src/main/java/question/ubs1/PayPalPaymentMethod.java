@@ -1,4 +1,4 @@
-package ubs1;
+package question.ubs1;
 
 public class PayPalPaymentMethod implements PaymentMethod {
 

@@ -1,4 +1,4 @@
-package ubs1;
+package question.ubs1;
 
 public class CreditCardPaymentMethod implements PaymentMethod {
     public CreditCardPaymentMethod(String cardNumber,String cvv,
