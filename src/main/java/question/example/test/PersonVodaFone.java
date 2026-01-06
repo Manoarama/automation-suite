@@ -49,21 +49,20 @@ last name and the value is the list of people that share the same last name.*/
         public static Map<String, List<PersonVodaFone>> getCommonLastNames(List<PersonVodaFone> personVodaFones) {
             Map<String, List<PersonVodaFone>> lastNameMap = new HashMap<>();
 
-            // Grouping by last name manually
+
             for (PersonVodaFone personVodaFone : personVodaFones) {
-                lastNameMap.putIfAbsent(personVodaFone.getLastName(), new ArrayList<>());
-                lastNameMap.get(personVodaFone.getLastName()).add(personVodaFone);
-            }
 
-            // Removing last names that appear only once
-            Map<String, List<PersonVodaFone>> commonLastNames = new HashMap<>();
-            for (Map.Entry<String, List<PersonVodaFone>> entry : lastNameMap.entrySet()) {
-                if (entry.getValue().size() > 1) {
-                    commonLastNames.put(entry.getKey(), entry.getValue());
+                // If last name is not already present, add it
+                if (!lastNameMap.containsKey(personVodaFone.lastName)) {
+                    lastNameMap.put(personVodaFone.lastName, new ArrayList<>());
                 }
+
+                // Add person to the list of that last name
+                lastNameMap.get(personVodaFone.lastName).add(personVodaFone);
             }
 
-            return commonLastNames;
+            return lastNameMap;
+
         }
 
         // Main method to demonstrate functionality.
@@ -78,11 +77,15 @@ last name and the value is the list of people that share the same last name.*/
 
             // Retrieve and print last names that are shared by multiple people.
             Map<String, List<PersonVodaFone>> commonLastNames = getCommonLastNames(people);
-            for (Map.Entry<String, List<PersonVodaFone>> entry : commonLastNames.entrySet()) {
+            /*for (Map.Entry<String, List<PersonVodaFone>> entry : commonLastNames.entrySet()) {
                 System.out.println("Last Name: " + entry.getKey());
                 for (PersonVodaFone personVodaFone : entry.getValue()) {
                     System.out.println(personVodaFone);
                 }
+            }*/
+            // Print result
+            for (String lastName : commonLastNames.keySet()) {
+                System.out.println(lastName + " -> " + commonLastNames.get(lastName));
             }
         }
     }
