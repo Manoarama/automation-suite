@@ -1,6 +1,6 @@
 package question.example.test;
 
-public class LTIMCBS {
+public class AlternateCharacterLTIMCBS {
 
     public static void main(String[] args) {
     String input="Manorama Singh";
