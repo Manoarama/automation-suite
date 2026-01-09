@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class Testeproductivity {
+public class TestEproductivity {
     public static void main(String[] args) {
 
         List<String> input=Arrays.asList("Alice","Rob","Andrew","Adam","Charlee");
