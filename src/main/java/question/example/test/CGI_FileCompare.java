@@ -4,45 +4,20 @@ import java.io.*;
 
 public class CGI_FileCompare {
     public static void main(String[] args) throws IOException {
-
         String expectedFilePath = "expected.txt";
         String actualFilePath = "actual.txt";
-
         compareFiles(expectedFilePath, actualFilePath);
-       /* String query="";
-        try {
-            getAzureconnection();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }*/
-
-       /* try {
-            try {
-                //String token="";401,403 bearer token
-                ResquestSpecification specification=Requet.bearer("token").get("").when().then();
-
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }*/
-
     }
-
-
-
     public static void compareFiles(String expectedPath, String actualPath) throws IOException {
         BufferedReader expectedReader = new BufferedReader(new FileReader(expectedPath));
         BufferedReader actualReader = new BufferedReader(new FileReader(actualPath));
-
         String expectedLine;
         String actualLine;
         int lineNum = 1;
         boolean isMatching = true;
 
         while ((expectedLine = expectedReader.readLine()) != null
-                | (actualLine = actualReader.readLine()) != null) {
+                |(actualLine = actualReader.readLine()) != null) {
 
             if (expectedLine == null) expectedLine = "";
             if (actualLine == null) actualLine = "";
