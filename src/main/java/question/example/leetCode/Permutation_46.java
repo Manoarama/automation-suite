@@ -3,7 +3,7 @@ package question.example.leetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Permutation46 {
+public class Permutation_46 {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         permuteSwap(nums, 0, result);
@@ -32,7 +32,7 @@ public class Permutation46 {
     }
 
     public static void main(String[] args) {
-        Permutation46 ip = new Permutation46();
+        Permutation_46 ip = new Permutation_46();
         int[] nums = {1, 2, 3};
         System.out.println(ip.permute(nums));
     }

@@ -55,27 +55,18 @@ public class ManualSortingWipro {
 
     // 4️⃣ Sort Names Lexicographically
     static void sortNamesLexicographically(Student[] students) {
-        String[] names = new String[students.length];
-
-        for (int i = 0; i < students.length; i++) {
-            names[i] = students[i].name;
-        }
-
-        for (int i = 0; i < names.length - 1; i++) {
-            for (int j = i + 1; j < names.length; j++) {
-                if (names[i].compareTo(names[j]) > 0) {
-                    String temp = names[i];
-                    names[i] = names[j];
-                    names[j] = temp;
+        for (int i = 0; i < students.length - 1; i++) {
+            for (int j = i + 1; j < students.length; j++) {
+                if (students[i].name.compareTo(students[j].name) > 0) {
+                    Student temp = students[i];
+                    students[i] = students[j];
+                    students[j] = temp;
                 }
             }
         }
-
-        System.out.println("\nNames in Lexicographical Order:");
-        for (String name : names) {
-            System.out.println(name);
-        }
     }
+
+
 
     public static void main(String[] args) {
 

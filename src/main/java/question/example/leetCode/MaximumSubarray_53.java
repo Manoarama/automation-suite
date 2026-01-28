@@ -1,6 +1,6 @@
 package question.example.leetCode;
 
-public class MaximumSubarray53 {
+public class MaximumSubarray_53 {
 
     public static int maxSubArray(int[] nums) {
         int currentSum = nums[0];

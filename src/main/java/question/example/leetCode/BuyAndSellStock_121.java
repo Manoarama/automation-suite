@@ -2,7 +2,7 @@ package question.example.leetCode;
 
 import java.util.Arrays;
 
-public class BuyAndSellStock121 {
+public class BuyAndSellStock_121 {
     public int maxProfit(int[] prices) {
         int minPrice = Integer.MAX_VALUE;
         int maxProfit = 0;
@@ -16,7 +16,7 @@ public class BuyAndSellStock121 {
     }
 
     public static void main(String[] args) {
-        BuyAndSellStock121 sol = new BuyAndSellStock121();
+        BuyAndSellStock_121 sol = new BuyAndSellStock_121();
 
         // Define test cases
         int[][] testCases = {

@@ -102,21 +102,9 @@ public class RetryAnalyzer implements IRetryAnalyzer {
                  .statusCode(201)
                  .extract().as(UserResponse.class);
         Assert.assertEquals(response.getName(),"John Doe");
+}
 
-
-    }
-
-   /* public static void main(String[] args) {
-       *//* System.out.println("Try programiz.pro");
-        String name="Manorama";
-        HashMap<Character,Integer> map=new HashMap();
-        for (Character c:name.toCharArray()){
-            if(map.containsKey(c))
-                map.put(c,map.get(c)+1);
-            else
-                map.put(c,1);
-        }
-        System.out.println(map);*//*
+   /*
         String baseURI="https://automationexercise.com/api/productsList";
 //No serialization needed (no request body)
        given()

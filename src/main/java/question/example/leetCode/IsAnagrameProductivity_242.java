@@ -1,6 +1,6 @@
 package question.example.leetCode;
 
-public class isAnagram242Eproductivity {
+public class IsAnagrameProductivity_242 {
 
     public static boolean isAnagram(String s, String t) {
 

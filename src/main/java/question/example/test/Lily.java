@@ -1,37 +1,39 @@
-/*
-package org.example.test;
-
+package question.example.test;
 import com.github.dockerjava.transport.DockerHttpClient;
-
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-
 public class Lily {
     public static void main(String[] args) {
-
         String input ="My name is Manorama Singh";
-
-        String []words=input.split(" ");
-        List<String> wordlist = new ArrayList<>();
-
-        for(String word:words){
-            wordlist.add(word) ;
+        System.out.println("Original List"+input);
+        /*String result=replaceWordInString(input);
+        System.out.println("Original List"+result);*/
+        replaceWordInString1(input);
         }
-        System.out.println("Original List"+wordlist);
-        //String newName=wordlist.get(3).replace("Manorama","Lily");
-        wordlist.add(3,wordlist.clear().get(3).replace("Manorama","Lily"));
 
-        //System.out.println(newName);
+    private static String replaceWordInString(String input) {
+        String[] words = input.split(" ");
+        List<String> wordlist = new ArrayList<>(Arrays.asList(words));
+        // Replace Manorama with Lily
+        wordlist.set(3, "Lily");
+        // Convert list back to string
+        return String.join(" ", wordlist);
+    }
+    private static List<String> replaceWordInString2(String input) {
+        String[] words = input.split(" ");
+        List<String> list = new ArrayList<>(Arrays.asList(words));
+        list.set(3, "Lily");
+        return list;
+    }
+    private static void replaceWordInString1(String input) {
+        String result = input.replace("Manorama", "Lily");
+        System.out.println(result);
+    }
+}
+//
 
-        System.out.println("Original List"+wordlist);
 
-
-        //for(int i=0;i< wordlist.size();i++) {
-
-        }
-        //
-
-       */
 /* //endpoint-200
         Response response=.() ->
                 .Given()

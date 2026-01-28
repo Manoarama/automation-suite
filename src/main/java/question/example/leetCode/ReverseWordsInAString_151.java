@@ -1,6 +1,6 @@
 package question.example.leetCode;
 
-public class ReverseWordsInAString151 {
+public class ReverseWordsInAString_151 {
 
     public static String reverseWords(String s) {
         // Step 1: Clean spaces
