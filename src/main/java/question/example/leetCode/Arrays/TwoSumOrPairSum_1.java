@@ -1,22 +1,23 @@
-package question.example.leetCode;
+package question.example.leetCode.Arrays;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum_1 {
+public class TwoSumOrPairSum_1 {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (map.containsKey(complement)) {
-                return new int[]{map.get(complement), i};
+                return new int[]{
+                        map.get(complement), i};
             }
             map.put(nums[i], i);
         }
         return new int[]{}; // never reached (as per problem)
     }
     public static void main(String[] args) {
-        TwoSum_1 object=new TwoSum_1();
+        TwoSumOrPairSum_1 object=new TwoSumOrPairSum_1();
         // Test Case 1: Basic case
         int[] nums1 = {2, 7, 11, 15};
         int target1 = 9;

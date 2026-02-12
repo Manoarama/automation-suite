@@ -1,4 +1,4 @@
-package question.example.leetCode;
+package question.example.leetCode.Arrays;
 
 import java.util.Arrays;
 
@@ -39,12 +39,12 @@ public class FindtheDuplicateNumber_287 {
 
         // Test Case 2
         int[] nums2 = {3, 1, 3, 4, 2};
-        System.out.println("\nInput: " + Arrays.toString(nums2));
+        System.out.println("Input: " + Arrays.toString(nums2));
         System.out.println("Duplicate: " + obj.findDuplicate(nums2));
 
         // Test Case 3
         int[] nums3 = {3, 3, 3, 3, 3};
-        System.out.println("\nInput: " + Arrays.toString(nums3));
+        System.out.println("Input: " + Arrays.toString(nums3));
         System.out.println("Duplicate: " + obj.findDuplicate(nums3));
     }
 }
