@@ -2,26 +2,22 @@ package question.example.leetCode;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.sql.Driver;
+import java.util.*;
 
 public class TestEmphasis {
     public static void main(String[] args) {
-        /*Set<String> set = new HashSet<>();
-        LinkedList<String> arrayList = new LinkedList<>();
-        String[] name = {"Manorama", "Abhay", "Monday", "Wednesday", "Friday", "Manorama", "Abhay"};
-
-        for (String s : name) {
-            if (arrayList.contains(s)) {
-
-            } else {
-                arrayList.add(s);
-            }
-        }
-        System.out.println(arrayList.toString());*/
-
-
+        List<String> names =new ArrayList<>(Arrays.asList( "Manorama", "Abhay", "Monday",
+                    "Wednesday", "Friday", "Manorama", "Abhay"));
+                removeduplicateword(names);
     }
 
+    private static List<String> removeduplicateword(List<String> list) {
+        Set<String> UniqueSet=new LinkedHashSet<>(list);
+        Collection collection;
+        return new ArrayList<>(UniqueSet);
     }
+
+}
 
 
 

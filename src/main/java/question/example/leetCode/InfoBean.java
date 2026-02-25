@@ -14,13 +14,13 @@ public class InfoBean {
     }
 
     private static char getFirstNonRepeating(String s) {
-        HashMap<Character,Integer> charCountMap=new HashMap<>();
+        HashMap<Character,Integer> map=new HashMap<>();
         for(int i=0;i<s.length();i++){
-            charCountMap.put(s.charAt(i),charCountMap.getOrDefault(s.charAt(i),0)+1);
+            map.put(s.charAt(i),map.getOrDefault(s.charAt(i),0)+1);
         }
         //for(charCountMap.get())
         for(int i=0;i<s.length();i++){
-           if(charCountMap.get(s.charAt(i))==1){
+           if(map.get(s.charAt(i))==1){
             return s.charAt(i);
         }}
         return 0;

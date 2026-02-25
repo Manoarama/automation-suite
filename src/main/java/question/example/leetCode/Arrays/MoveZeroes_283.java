@@ -3,9 +3,8 @@ package question.example.leetCode.Arrays;
 import java.util.Arrays;
 
 public class MoveZeroes_283 {
-    public static void moveZeroes(int[] nums) {
+    public static void moveZeroes1(int[] nums) {
         int j = 0;
-
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != 0) {
                 if (i != j) {
@@ -16,6 +15,23 @@ public class MoveZeroes_283 {
             }
         }
     }
+    public static void moveZeroes(int[] nums) {
+        int nz = 0;   // current index scanning array
+        int z = 0;   // position where next non-zero should go
+        int size=nums.length;
+        while (nz < size) {
+            if (nums[nz] != 0) {
+                int temp = nums[nz];
+                nums[nz] = nums[z];
+                nums[z] = temp;
+                nz++;
+                z++;
+            } else {
+                nz++;
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
 
@@ -29,17 +45,5 @@ public class MoveZeroes_283 {
         moveZeroes(nums2);
         System.out.println("Example 2 Output: " + Arrays.toString(nums2));
     }
-    public void moveZeroes1(int[] nums) {
-        int j = 0;  // pointer for non-zero position
 
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != 0) {
-                int temp = nums[i];
-                nums[i] = nums[j];
-                nums[j] = temp;
-                j++;
-            }
-        }
-    }
 }
-
